@@ -1,0 +1,10 @@
+{
+  "title": "Optimize Nvidia Settings",
+  "name": "optimize-nvidia-settings",
+  "risk": "safe",
+  "modal": "You can revert these changes in the Nvidia control panel (be sure to open nvidia control panel at least once) ",
+  "reversible": false,
+  "deepDescription": "This Changes the following NVIDIA Control Panel settings:\n\n- Image Scaling → Off\n- Ambient Occlusion → Off\n- Anisotropic Filtering → Application-controlled\n- Antialiasing – FXAA → Off\n- Antialiasing – Gamma Correction → Off\n- Antialiasing – Mode → Application-controlled\n- CUDA – GPUs → All\n- DSR Factors → Off\n- Low Latency Mode → On\n- Max Frame Rate → Off\n- Multi-Frame Sampled AA (MFAA) → Off\n- OpenGL Rendering GPU → Use NVIDIA GPU\n- Power Management Mode → Prefer Maximum Performance\n- Shader Cache Size → Unlimited\n- Texture Filtering – Anisotropic Sample Optimization → On\n- Texture Filtering – Negative LOD Bias → Allow\n- Texture Filtering – Quality → High Performance\n- Texture Filtering – Trilinear Optimization → On\n- Threaded Optimization → On\n- Triple Buffering → Off\n- Vertical Sync → Off\n- Virtual Reality pre-rendered frames → 1",
+  "category": ["Performance", "GPU", "Gaming"],
+  "description": "Changes Nvidia Control Panel settings to improve gaming performance"
+}

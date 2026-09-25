@@ -1,0 +1,12 @@
+{
+  "name": "consumer-features",
+  "title": "Disable Consumer Features",
+  "risk": "safe",
+  "description": "Prevents Windows from automatically installing games, third-party apps, or app links from the Microsoft Store.",
+  "reversible": true,
+  "modal": "Disabling consumer features may make some default apps inaccessible (e.g., Phone Link). Are you sure?",
+  "category": ["Privacy"],
+  "warning": "Some default apps may become inaccessible.",
+  "addedversion": "2.14.1",
+  "deepDescription": "This tweak disables Windows Consumer Features, preventing automatic installation of Microsoft Store apps, games, or links. Useful for reducing bloatware and controlling which apps are installed."
+}

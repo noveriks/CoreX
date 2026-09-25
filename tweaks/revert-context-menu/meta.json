@@ -1,0 +1,9 @@
+{
+  "title": "Revert Context Menu",
+  "name": "revert-context-menu",
+  "risk": "safe",
+  "category": ["General", "Appearance"],
+  "recommended": true,
+  "description": "Reverts the context menu to the default Windows 10 context menu.",
+  "deepDescription": "Creates a blank InprocServer32 key under a specific CLSID to disable the modern right-click context menu in Windows 11, restoring the classic one and improving responsiveness in File Explorer."
+}

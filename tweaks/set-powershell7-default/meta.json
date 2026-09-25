@@ -1,0 +1,9 @@
+{
+  "name": "set-powershell7-default",
+  "title": "Set PowerShell 7 as Default",
+  "risk": "safe",
+  "description": "Sets PowerShell 7 as the default profile in Windows Terminal (installs PS7 if missing)",
+  "modal": "This tweak will change your Windows Terminal default profile from Windows PowerShell 5 to PowerShell 7. PowerShell 7 will be installed automatically if it is not already present.",
+  "category": ["General"],
+  "deep-description": "This tweak modifies the **Windows Terminal settings.json** to make PowerShell 7 the default profile instead of Windows PowerShell 5. If PowerShell 7 is not installed, it will be installed automatically via `winget`. You can undo this tweak at any time to revert back to PowerShell 5 as the default."
+}

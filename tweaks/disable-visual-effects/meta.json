@@ -1,0 +1,8 @@
+{
+  "title": "Disable Visual Effects",
+  "name": "disable-visual-effects",
+  "risk": "safe",
+  "category": ["Performance", "Appearance"],
+  "description": "Sets Windows to Best Performance mode, disabling all visual candy.",
+  "deepDescription": "Disables all Windows visual effects including shadows, fading, smooth scrolling, and thumbnail previews by setting the VisualEffectsRegKey to best performance mode. This makes the UI feel much snappier, especially on lower-end hardware."
+}

@@ -1,0 +1,3 @@
+Remove-Item -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsAI" -Recurse -Force
+
+Start-Process "powershell.exe" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"Write-Host 'Re-enabling Windows Recall...' -ForegroundColor Cyan; Write-Host 'This may take a while depending on your internet connection. Please wait...' -ForegroundColor Yellow; try { DISM /Online /Enable-Feature /FeatureName:Recall /NoRestart; Write-Host 'Windows Recall has been re-enabled successfully.' -ForegroundColor Green } catch { Write-Host 'Failed to re-enable Windows Recall.' -ForegroundColor Red }; Write-Host 'Press any key to close...'; $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown')`"" -WindowStyle Normal

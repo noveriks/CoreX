@@ -1,0 +1,1 @@
+# Re-enable CPU Power Throttling Write-Host "Re-enabling CPU power throttling..." -ForegroundColor Cyan Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\Power\PowerThrottling" -Name "PowerThrottlingOff" -Value 0 -Type DWord -Force -ErrorAction SilentlyContinue Write-Host "CPU power throttling has been re-enabled." -ForegroundColor Green

@@ -1,0 +1,8 @@
+{
+  "title": "Disable Memory Compression",
+  "name": "disable-memory-compression",
+  "risk": "caution",
+  "category": ["Performance"],
+  "description": "Disables memory compression to free RAM and reduce CPU overhead.",
+  "deepDescription": "Disables the Windows Memory Compression service which compresses memory pages in RAM. On systems with sufficient RAM (16GB+), this reduces CPU overhead and eliminates the latency of compressing/decompressing memory pages."
+}

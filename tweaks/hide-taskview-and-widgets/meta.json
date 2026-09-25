@@ -1,0 +1,9 @@
+{
+  "name": "hide-taskview-and-widgets",
+  "title": "Hide Taskview and Widgets",
+  "risk": "safe",
+  "deepDescription": "Disables both the Task View button and the Widgets panel by updating the user's Explorer taskbar settings in the registry, removing the icons and preventing them from appearing on the taskbar.",
+  "description": "Hides the Taskview and Widgets buttons on the taskbar.",
+  "category": ["General", "Appearance"],
+  "modal": "This will REMOVE the Windows Widgets feature entirely.\n\nTo restore it later, you will need to run:\nwinget install 9MSSGKG348SP\n\nor search 'Windows Web Experience Pack' in the Microsoft Store."
+}

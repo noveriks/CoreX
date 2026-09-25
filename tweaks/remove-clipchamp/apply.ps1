@@ -1,0 +1,1 @@
+# Remove Clipchamp Write-Host "Removing Clipchamp..." -ForegroundColor Cyan Get-AppxPackage -Name "Clipchamp.Clipchamp" -ErrorAction SilentlyContinue | Remove-AppxPackage -ErrorAction SilentlyContinue Write-Host "Clipchamp has been removed." -ForegroundColor Green

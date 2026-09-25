@@ -1,0 +1,8 @@
+{
+  "title": "Disable Nagle's Algorithm",
+  "name": "disable-nagles-algorithm",
+  "risk": "caution",
+  "category": ["Network", "Gaming"],
+  "description": "Disables Nagle's Algorithm to reduce TCP latency for online gaming.",
+  "deepDescription": "Disables Nagle's Algorithm on all network interfaces by setting TcpAckFrequency=1 and TCPNoDelay=1. This prevents TCP packet batching that adds latency, making every packet sent immediately. Critical for real-time applications like online gaming and video calls."
+}

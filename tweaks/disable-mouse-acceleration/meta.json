@@ -1,0 +1,9 @@
+{
+  "title": "Disable Mouse Acceleration",
+  "name": "disable-mouse-acceleration",
+  "risk": "safe",
+  "modal": "This overrides the default mouse acceleration settings in Windows.",
+  "description": "Disables mouse acceleration for a more consistent and precise mouse movement experience. Great for gaming",
+  "deepDescription": "Disables Windows mouse acceleration by setting MouseSpeed, MouseThreshold1, and MouseThreshold2 to 0, enabling consistent and linear cursor movement for improved precision.",
+  "category": ["Performance", "Gaming"]
+}

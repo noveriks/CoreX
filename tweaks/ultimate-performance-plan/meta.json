@@ -1,0 +1,10 @@
+{
+  "title": "Ultimate Performance Power Plan",
+  "name": "ultimate-performance-plan",
+  "risk": "caution",
+  "description": "Enables And Applies The Windows Ultimate Powerplan for better performance",
+  "deepDescription": "Enables the Ultimate Performance power plan by creating it if missing, retrieving its GUID, and activating it to maximize system responsiveness and performance by preventing power-saving limitations.",
+  "recommended": true,
+  "top": true,
+  "category": ["Performance", "Gaming"]
+}

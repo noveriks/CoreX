@@ -1,0 +1,9 @@
+{
+  "title": "Remove OneDrive",
+  "name": "remove-onedrive",
+  "risk": "caution",
+  "category": ["Performance", "General", "Privacy"],
+  "description": "Removes OneDrive from the system",
+  "deepDescription": "Uses registry, file system, and process commands to uninstall OneDrive, clean leftovers, and restore defaults—freeing RAM, CPU, and I/O by eliminating its background sync and startup tasks.",
+  "modal": "This will remove OneDrive from your system. You can reinstall it later if needed. this also moves onedrive files to your home folder"
+}

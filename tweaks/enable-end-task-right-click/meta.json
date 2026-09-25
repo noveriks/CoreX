@@ -1,0 +1,9 @@
+{
+  "title": "Enable End Task With Right Click",
+  "name": "enable-end-task-right-click",
+  "risk": "safe",
+  "category": ["General"],
+  "recommended": true,
+  "description": "Enables the \"End Task\" option in the taskbar context menu",
+  "deepDescription": "Enables the \"End Task\" option in the Windows 11 taskbar right-click menu by setting TaskbarEndTask to 1, allowing users to kill unresponsive apps directly from the taskbar without opening Task Manager."
+}

@@ -1,0 +1,29 @@
+{
+  "name": "corex",
+  "version": "2.19.0",
+  "description": "CoreX",
+  "main": "./out/main/index.js",
+  "author": "Noveriks",
+  "license": "MIT",
+  "homepage": "https://github.com/Noveriks/CoreX",
+  "dependencies": {
+    "@electron-toolkit/preload": "^3.0.2",
+    "@electron-toolkit/utils": "^4.0.0",
+    "@lucide/lab": "^0.1.2",
+    "clsx": "^2.1.1",
+    "electron-log": "^5.4.3",
+    "electron-store": "8.1.0",
+    "electron-updater": "^6.6.2",
+    "lucide-react": "^0.542.0",
+    "posthog-js": "^1.362.0",
+    "react-router-dom": "^7.8.2",
+    "react-toastify": "^11.0.5",
+    "systeminformation": "^5.31.7",
+    "zustand": "^5.0.8"
+  },
+  "devDependencies": {
+    "electron": "^44.0.0"
+  },
+  "repository": "https://github.com/Noveriks/CoreX",
+  "packageManager": "pnpm@10.29.3"
+}

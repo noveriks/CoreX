@@ -1,0 +1,9 @@
+{
+  "title": "Show File Extensions",
+  "name": "show-file-extensions",
+  "risk": "safe",
+  "recommended": true,
+  "category": ["General", "Appearance"],
+  "description": "Shows file extensions and hidden files in Explorer.",
+  "deepDescription": "Sets Windows Explorer to show file extensions for all file types and reveals hidden files. Every power user enables these on a fresh Windows install for better file management and security awareness."
+}

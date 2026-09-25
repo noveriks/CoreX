@@ -1,0 +1,17 @@
+{
+  "name": "disable-rdp-warnings",
+  "title": "Disable RDP Warnings for Unsigned Files",
+  "risk": "caution",
+  "description": "Suppresses Windows security warnings when opening unsigned Remote Desktop (.rdp) files.",
+  "reversible": true,
+  "modal": "This disables Microsoft's new RDP file security warnings introduced in April 2026. Unsigned RDP files from unknown publishers will connect without warning. Only disable if you understand the security risks.",
+  "category": ["General", "Privacy"],
+  "warning": " RDP files have been abused in attacks, it is strongly recommended to keep these protections enabled..",
+  "addedversion": "2.19.0",
+  "links": [
+    {
+      "name": "Microsoft adds Windows protections for malicious Remote Desktop files",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-adds-windows-protections-for-malicious-remote-desktop-files/"
+    }
+  ]
+}

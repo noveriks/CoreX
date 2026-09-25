@@ -1,0 +1,9 @@
+{
+  "title": "Set High Performance Power Plan",
+  "name": "set-high-performance-power-plan",
+  "risk": "safe",
+  "recommended": true,
+  "category": ["Performance", "Gaming"],
+  "description": "Activates the Ultimate Performance or High Performance power plan.",
+  "deepDescription": "Activates the Ultimate Performance power plan if available, otherwise falls back to High Performance. This prevents CPU throttling, keeps clock speeds high, and eliminates micro-stutter caused by power state transitions."
+}

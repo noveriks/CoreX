@@ -1,0 +1,14 @@
+{
+  "title": "Enable Game Mode",
+  "name": "enable-game-mode",
+  "risk": "safe",
+  "category": ["General", "Performance", "Gaming"],
+  "description": "Enables Game Mode on windows",
+  "deepDescription": "Enables the game mode feature on windows to improve performance and reduce latency. altough it not all users see a performance boost or may even cause worse performance. its recommended to test with and without to see if it works for you.",
+  "links": [
+    {
+      "name": "Game Mode (Microsoft)",
+      "url": "https://support.xbox.com/en-US/help/games-apps/game-setup-and-play/use-game-mode-gaming-on-pc"
+    }
+  ]
+}

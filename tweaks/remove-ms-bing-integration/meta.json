@@ -1,0 +1,10 @@
+{
+  "name": "remove-ms-bing-integration",
+  "title": "Remove Microsoft Bing Integration",
+  "risk": "safe",
+  "description": "Removes Bing apps and disables Bing web search in Windows Search.",
+  "deepDescription": "Removes all Microsoft Bing apps (News, Weather, Finance, etc.) and disables Bing web search results from appearing in Windows Search. This improves privacy and speeds up local searches.",
+  "category": ["Privacy", "Performance"],
+  "reversible": true,
+  "modal": "This will remove all Bing apps (News, Weather, etc.) and disable Bing web search in Windows Search.\n\nTo restore, you can reinstall apps from the Microsoft Store."
+}

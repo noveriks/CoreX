@@ -1,0 +1,16 @@
+node_modules
+.claude
+.mimosa
+.qoder
+
+# Build output
+out/
+
+# Logs
+*.log
+logs/
+
+# OS files
+Thumbs.db
+.DS_Store
+

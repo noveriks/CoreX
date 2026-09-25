@@ -1,0 +1,8 @@
+{
+  "title": "Disable Wifi Sense",
+  "name": "disable-wifi-sense",
+  "risk": "safe",
+  "category": ["Privacy", "Network", "General"],
+  "description": "Disables Wifi Sense to prevent sharing of Wi-Fi networks with contacts",
+  "deepDescription": "Disables Wi-Fi Sense features by setting related policy values to 0, preventing automatic connection to open hotspots and blocking location-based Wi-Fi hotspot reporting to enhance privacy and reduce unwanted background activity"
+}

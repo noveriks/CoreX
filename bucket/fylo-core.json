@@ -1,0 +1,16 @@
+{
+  "version": "2.18.0",
+  "description": "Windows debloat and optimization tool",
+  "homepage": "https://getfylocore.net",
+  "license": "MIT",
+  "url": "https://github.com/Noveriks/CoreX/releases/download/2.19.0/corex-2.19.0-setup.exe",
+  "hash": "REPLACE_ME",
+
+  "shortcuts": [["corex.exe", "CoreX"]],
+  "checkver": {
+    "github": "https://github.com/Noveriks/corex"
+  },
+  "autoupdate": {
+    "url": "https://github.com/Noveriks/corex/releases/download/$version/corex-$version-setup.exe"
+  }
+}

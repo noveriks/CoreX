@@ -1,0 +1,27 @@
+{
+  "title": "Debloat Windows",
+  "name": "debloat-windows",
+  "risk": "safe",
+  "description": "Choose between CoreX Debloat script or Raphire's Win11Debloat script to remove built-in Windows apps and bloatware.",
+  "reversible": false,
+  "updatedversion": "2.14.0",
+  "recommended": true,
+  "top": true,
+  "deepDescription": "The user can choose between two methods to debloat Windows:\n\n 1. CoreX Custom Selective Script: This method allows users to select which apps they want to keep. A WPF Window is presented where users can check or uncheck apps from a list.\n\n 2. Raphire's Win11Debloat Script: This method uses a well-known script that removes a wide range of built-in Windows apps and features. It is comprehensive and suitable for users who want a quick and effective way to debloat their system.\n\n Both remove bloatware and improve privacy by removing unnecessary Microsoft components, but they cater to different user preferences regarding control and convenience.",
+  "modal": "CoreX has 2 debloat methods:\n\n- CoreX Debloat Script: Lets you pick which apps to keep.\n- Raphire's Script: Removes most built-in Windows apps quickly.\n\nBoth remove bloatware and improve privacy.",
+  "category": ["Performance", "Privacy"],
+  "links": [
+    {
+      "name": "Debloat Windows Script (Raphire)",
+      "url": "https://github.com/Raphire/Win11Debloat"
+    },
+    {
+      "name": "Use CoreX Debloat Script without CoreX",
+      "url": "https://getfylocore.net/debloat"
+    },
+    {
+      "name": "CoreX Debloat Script",
+      "url": "https://github.com/Noveriks/CoreX/blob/main/resources/tweaks/debloat-windows/apply.ps1"
+    }
+  ]
+}

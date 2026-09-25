@@ -1,0 +1,8 @@
+{
+  "name": "24-hour-clock",
+  "title": "Set 24-Hour Clock",
+  "risk": "safe",
+  "deepDescription": "Switches Windows to a true 24-hour time format by updating the user’s regional time settings in the registry, affecting taskbar, apps, and system timestamps. IF HAVING ISSUES WITH TASKBAR, RESTART EXPLORER WITHIN SETTINGS",
+  "description": "Changes clock to display 24-hour format.",
+  "category": ["General", "Appearance"]
+}

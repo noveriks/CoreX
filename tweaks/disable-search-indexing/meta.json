@@ -1,0 +1,8 @@
+{
+  "title": "Disable Search Indexing",
+  "name": "disable-search-indexing",
+  "risk": "safe",
+  "category": ["Performance"],
+  "description": "Stops SearchIndexer.exe and frees constant disk activity.",
+  "deepDescription": "Stops and disables the Windows Search Indexing service (WSearch). This eliminates the constant disk I/O caused by SearchIndexer.exe indexing files in the background. Search will still work, just without the instant-results feature."
+}

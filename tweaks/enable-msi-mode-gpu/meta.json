@@ -1,0 +1,8 @@
+{
+  "title": "Enable MSI Mode for GPU",
+  "name": "enable-msi-mode-gpu",
+  "risk": "risky",
+  "category": ["Gaming", "GPU", "Performance"],
+  "description": "Switches GPU to Message-Signaled Interrupts for lower latency and better FPS stability.",
+  "deepDescription": "Enables Message-Signaled Interrupts (MSI) mode for the GPU by setting the MSISupported registry key. MSI mode reduces interrupt latency compared to Line-Based interrupts, resulting in more stable frame times and reduced input lag in games. Requires reboot to take effect."
+}

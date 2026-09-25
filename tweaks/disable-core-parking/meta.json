@@ -1,0 +1,8 @@
+{
+  "title": "Disable CPU Core Parking",
+  "name": "disable-core-parking",
+  "risk": "caution",
+  "category": ["Performance", "Gaming"],
+  "description": "Prevents Windows from parking CPU cores, reducing input lag and stutter in games.",
+  "deepDescription": "Sets the minimum processor state to 100% via powercfg, preventing Windows from parking (sleeping) CPU cores. This keeps all cores active at all times, reducing latency when load spikes and eliminating micro-stutter caused by core wake-up delays."
+}

@@ -1,0 +1,8 @@
+{
+  "title": "Enable HAGS",
+  "name": "enable-hags",
+  "risk": "safe",
+  "category": ["Performance", "Gaming", "GPU"],
+  "description": "Enables HAGS (Hardware Accelerated GPU Scheduling)",
+  "deepDescription": "Hardware-Accelerated GPU Scheduling (HAGS) is a Windows feature that shifts more GPU management and scheduling tasks from the CPU to the GPU, reducing CPU overhead and potentially improving performance and latency"
+}

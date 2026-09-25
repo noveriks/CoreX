@@ -1,0 +1,1027 @@
+{
+  "version": "2026-06-03T09:09:48.644Z",
+  "tweaks": [
+    {
+      "id": "24-hour-clock",
+      "title": "Set 24-Hour Clock",
+      "description": "Changes clock to display 24-hour format.",
+      "category": [
+        "General",
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/24-hour-clock",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/24-hour-clock/meta.json"
+    },
+    {
+      "id": "align-taskbar-left",
+      "title": "Align Taskbar Left",
+      "description": "Aligns the taskbar to the left side of the screen.",
+      "category": [
+        "General",
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/align-taskbar-left",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/align-taskbar-left/meta.json"
+    },
+    {
+      "id": "block-telemetry-hosts",
+      "title": "Block Telemetry via Hosts",
+      "description": "DNS-level block of 100+ Microsoft telemetry domains via hosts file.",
+      "category": [
+        "Privacy",
+        "Network"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/block-telemetry-hosts",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/block-telemetry-hosts/meta.json"
+    },
+    {
+      "id": "classic-file-explorer",
+      "title": "Classic File Explorer Style",
+      "description": "Restores the Windows 10-style File Explorer with the classic ribbon interface and removes the Windows 11 simplified command bar. Power users get full access to all file operations without extra clicks.",
+      "category": [
+        "Appearance",
+        "General"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/classic-file-explorer",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/classic-file-explorer/meta.json"
+    },
+    {
+      "id": "debloat-windows",
+      "title": "Debloat Windows",
+      "description": "Choose between CoreX Debloat script or Raphire's Win11Debloat script to remove built-in Windows apps and bloatware.",
+      "category": [
+        "Performance",
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": false,
+      "updatedversion": "2.14.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/debloat-windows",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/debloat-windows/meta.json"
+    },
+    {
+      "id": "detailed-bsod",
+      "title": "Detailed BSOD",
+      "description": "Adds detailed information to the Blue Screen of Death (BSOD) screen",
+      "category": [
+        "General"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/detailed-bsod",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/detailed-bsod/meta.json"
+    },
+    {
+      "id": "disable-8-3-shortcut-names",
+      "title": "Disable 8.3 Short File Names",
+      "description": "Disables the legacy 8.3 short name generation on NTFS volumes. Reduces filesystem overhead and improves disk performance. Modern applications don't need 8.3 naming.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-8-3-shortcut-names",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-8-3-shortcut-names/meta.json"
+    },
+    {
+      "id": "disable-activity-history",
+      "title": "Disable Activity History",
+      "description": "Disables Windows Timeline and activity history collection. Prevents Windows from tracking and storing your app activity, browser history, and file access patterns across devices.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-activity-history",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-activity-history/meta.json"
+    },
+    {
+      "id": "disable-advertising-id",
+      "title": "Disable Advertising ID",
+      "description": "Disables the Windows advertising identifier which is used by apps and services to track your activity for personalized ads. Stops targeted advertising across Windows apps and services.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-advertising-id",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-advertising-id/meta.json"
+    },
+    {
+      "id": "disable-animations",
+      "title": "Disable UI Animations",
+      "description": "Disables all Windows UI animations including window transitions, taskbar animations, and minimization effects. Makes the interface feel instantly responsive. Especially effective on low-end hardware or remote desktop sessions.",
+      "category": [
+        "Appearance",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-animations",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-animations/meta.json"
+    },
+    {
+      "id": "disable-app-spying",
+      "title": "Disable App Access to Tracking Data",
+      "description": "Revokes app access to diagnostics, contacts, calendar, call history, email, tasks, and messaging data. Prevents third-party and Microsoft apps from harvesting your personal data without consent.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-app-spying",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-app-spying/meta.json"
+    },
+    {
+      "id": "disable-background-ms-store-apps",
+      "title": "Disable Background MS Store apps",
+      "description": "Disables Microsoft Store apps from running in the background",
+      "category": [
+        "Performance",
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-background-ms-store-apps",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-background-ms-store-apps/meta.json"
+    },
+    {
+      "id": "consumer-features",
+      "title": "Disable Consumer Features",
+      "description": "Prevents Windows from automatically installing games, third-party apps, or app links from the Microsoft Store.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "addedversion": "2.14.1",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-consumer-features",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-consumer-features/meta.json"
+    },
+    {
+      "id": "disable-copilot",
+      "title": "Disable Copilot",
+      "description": "Removes Microsoft's Copilot feature. (will fail if copilot is not installed)",
+      "category": [
+        "Performance",
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-copilot",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-copilot/meta.json"
+    },
+    {
+      "id": "disable-core-isolation",
+      "title": "Disable Core Isolation",
+      "description": "Disables Core Isolation Memory Integrity to improve system performance",
+      "category": [
+        "Performance",
+        "Gaming"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-core-isolation",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-core-isolation/meta.json"
+    },
+    {
+      "id": "disable-core-parking",
+      "title": "Disable CPU Core Parking",
+      "description": "Prevents Windows from parking CPU cores, reducing input lag and stutter in games.",
+      "category": [
+        "Performance",
+        "Gaming"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-core-parking",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-core-parking/meta.json"
+    },
+    {
+      "id": "disable-defender-rtp",
+      "title": "Disable Defender RTP",
+      "description": "Disables Defender Real-time Protection",
+      "category": [
+        "Performance",
+        "General"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-defender-rtp",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-defender-rtp/meta.json"
+    },
+    {
+      "id": "disable-diagnostic-data",
+      "title": "Disable Diagnostic Data Collection",
+      "description": "Sets Windows diagnostic data to minimal (security only) level and disables the Diagnostic Policy Service. Stops Windows from collecting crash reports, performance data, and system telemetry beyond basic security info.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-diagnostic-data",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-diagnostic-data/meta.json"
+    },
+    {
+      "id": "disable-dynamic-ticking",
+      "title": "Disable Dynamic Ticking",
+      "description": "Improves system responsiveness and reduces latency by disabling dynamic timer ticks.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-dynamic-ticking",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-dynamic-ticking/meta.json"
+    },
+    {
+      "id": "disable-fast-startup",
+      "title": "Disable Fast Startup",
+      "description": "Disables Windows Fast Startup to improve system stability",
+      "category": [
+        "Performance",
+        "General"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-fast-startup",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-fast-startup/meta.json"
+    },
+    {
+      "id": "disable-fullscreen-optimizations",
+      "title": "Disable Fullscreen Optimizations",
+      "description": "Disables Windows fullscreen optimizations (FSE) which can cause stuttering and input lag in games. Forces exclusive fullscreen mode for better gaming performance and lower latency.",
+      "category": [
+        "Gaming"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-fullscreen-optimizations",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-fullscreen-optimizations/meta.json"
+    },
+    {
+      "id": "disable-gamebar",
+      "title": "Disable Gamebar",
+      "description": "Disables The Xbox gamebar ",
+      "category": [
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-gamebar",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-gamebar/meta.json"
+    },
+    {
+      "id": "disable-hibernation",
+      "title": "Disable Hibernation",
+      "description": "Disables the hibernation feature to free up disk space and improve shutdown speed",
+      "category": [
+        "Performance",
+        "General"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-hibernation",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-hibernation/meta.json"
+    },
+    {
+      "id": "disable-hpet",
+      "title": "Disable HPET",
+      "description": "Disables High Precision Event Timer to fix micro-stutter in games.",
+      "category": [
+        "Performance",
+        "Gaming"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-hpet",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-hpet/meta.json"
+    },
+    {
+      "id": "disable-ipv6",
+      "title": "Disable IPv6",
+      "description": "Disables IPv6 on all network interfaces. If your ISP doesn't support IPv6 or you experience connectivity issues, disabling it can prevent DNS leaks and improve connection reliability. Most home networks still primarily use IPv4.",
+      "category": [
+        "Network"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-ipv6",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-ipv6/meta.json"
+    },
+    {
+      "id": "disable-location-tracking",
+      "title": "Disable Location Tracking",
+      "description": "Disables Windows location tracking.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-location-tracking",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-location-tracking/meta.json"
+    },
+    {
+      "id": "disable-lock-screen",
+      "title": "Disable Lock Screen",
+      "description": "Bypasses the Windows lock screen and goes directly to the login screen. Saves a click every time you unlock your PC. Keeps your password security intact — just removes the wallpaper/clock screen before the login prompt.",
+      "category": [
+        "Appearance",
+        "General"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-lock-screen",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-lock-screen/meta.json"
+    },
+    {
+      "id": "disable-lockscreen-tips",
+      "title": "Disable Lockscreen Tips",
+      "description": "Disables tips on the lockscreen.",
+      "category": [
+        "General"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-lockscreen-tips",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-lockscreen-tips/meta.json"
+    },
+    {
+      "id": "disable-memory-compression",
+      "title": "Disable Memory Compression",
+      "description": "Disables memory compression to free RAM and reduce CPU overhead.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-memory-compression",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-memory-compression/meta.json"
+    },
+    {
+      "id": "disable-mouse-acceleration",
+      "title": "Disable Mouse Acceleration",
+      "description": "Disables mouse acceleration for a more consistent and precise mouse movement experience. Great for gaming",
+      "category": [
+        "Performance",
+        "Gaming"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-mouse-acceleration",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-mouse-acceleration/meta.json"
+    },
+    {
+      "id": "disable-mpo",
+      "title": "Disable Multi-Plane Overlay (MPO)",
+      "description": "Disables the Windows Multi-Plane Overlay which can cause screen flickering, black screens, stuttering, and alt-tab issues with NVIDIA/AMD GPUs. Particularly effective for fixing fullscreen game stability issues.",
+      "category": [
+        "Gaming",
+        "GPU"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-mpo",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-mpo/meta.json"
+    },
+    {
+      "id": "disable-nagle-algorithm",
+      "title": "Disable Nagle Algorithm (No Delay)",
+      "description": "Disables the Nagle buffering algorithm on all active network adapters. Reduces network latency for real-time applications like online gaming and VoIP by sending packets immediately instead of buffering small ones.",
+      "category": [
+        "Network",
+        "Gaming"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-nagle-algorithm",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-nagle-algorithm/meta.json"
+    },
+    {
+      "id": "disable-nagles-algorithm",
+      "title": "Disable Nagle's Algorithm",
+      "description": "Disables Nagle's Algorithm to reduce TCP latency for online gaming.",
+      "category": [
+        "Network",
+        "Gaming"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-nagles-algorithm",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-nagles-algorithm/meta.json"
+    },
+    {
+      "id": "disable-network-throttling",
+      "title": "Disable Network Throttling Index",
+      "description": "Disables Windows network throttling which limits network throughput when multimedia playback is detected. Removes the 10Mbps cap on non-multimedia network traffic. Improves network performance during gaming and streaming.",
+      "category": [
+        "Network",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-network-throttling",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-network-throttling/meta.json"
+    },
+    {
+      "id": "disable-ntfs-last-access",
+      "title": "Disable NTFS Last Access Timestamp",
+      "description": "Stops Windows from updating the last access timestamp on files and directories. Reduces unnecessary disk writes and improves filesystem performance, especially on HDDs.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-ntfs-last-access",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-ntfs-last-access/meta.json"
+    },
+    {
+      "id": "disable-power-throttling",
+      "title": "Disable CPU Power Throttling",
+      "description": "Disables Windows power throttling which limits CPU performance for background processes. Ensures maximum CPU performance for gaming and heavy workloads. May increase power consumption and heat on laptops.",
+      "category": [
+        "Gaming",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-power-throttling",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-power-throttling/meta.json"
+    },
+    {
+      "id": "disable-rdp-warnings",
+      "title": "Disable RDP Warnings for Unsigned Files",
+      "description": "Suppresses Windows security warnings when opening unsigned Remote Desktop (.rdp) files.",
+      "category": [
+        "General",
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "addedversion": "2.19.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-rdp-warnings",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-rdp-warnings/meta.json"
+    },
+    {
+      "id": "disable-windows-recall",
+      "title": "Disable Windows Recall",
+      "description": "Disables the Windows Recall feature for better privacy.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "addedversion": "2.14.2",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-recall",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-recall/meta.json"
+    },
+    {
+      "id": "disable-search-indexing",
+      "title": "Disable Search Indexing",
+      "description": "Stops SearchIndexer.exe and frees constant disk activity.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-search-indexing",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-search-indexing/meta.json"
+    },
+    {
+      "id": "disable-startup-delay",
+      "title": "Disable Startup Delay",
+      "description": "Removes startup delay so apps launch immediately on boot.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-startup-delay",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-startup-delay/meta.json"
+    },
+    {
+      "id": "disable-superfetch-sysmain",
+      "title": "Disable SuperFetch / SysMain",
+      "description": "Disables the SysMain (formerly SuperFetch) service which preloads app data into RAM. Frees up memory and reduces disk I/O, especially beneficial for SSDs and systems with limited RAM.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-superfetch-sysmain",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-superfetch-sysmain/meta.json"
+    },
+    {
+      "id": "disable-sys-main",
+      "title": "Disable SysMain (Superfetch)",
+      "description": "Disables the SysMain (formerly Superfetch) service which preloads frequently-used apps into RAM. On SSDs this provides negligible benefit and can cause 100% disk usage spikes. On HDDs it may still be useful. Recommended for systems with SSDs.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-sys-main",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-sys-main/meta.json"
+    },
+    {
+      "id": "disable-sysmain",
+      "title": "Disable SysMain (Superfetch)",
+      "description": "Disables SysMain service to free 200-500MB RAM and stop constant disk I/O.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-sysmain",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-sysmain/meta.json"
+    },
+    {
+      "id": "disable-telemetry",
+      "title": "Disable Telemetry",
+      "description": "Disables Windows telemetry and data collection for improved privacy and performance.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "addedversion": "2.14.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-telemetry",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-telemetry/meta.json"
+    },
+    {
+      "id": "disable-usb-power-savings",
+      "title": "Disable USB Power Savings",
+      "description": "Disables USB selective suspend which powers down USB devices to save energy. Prevents USB device disconnects, mouse/keyboard lag, and audio dropouts. Critical for competitive gaming and audio production.",
+      "category": [
+        "Gaming",
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-usb-power-savings",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-usb-power-savings/meta.json"
+    },
+    {
+      "id": "disable-visual-effects",
+      "title": "Disable Visual Effects",
+      "description": "Sets Windows to Best Performance mode, disabling all visual candy.",
+      "category": [
+        "Performance",
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-visual-effects",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-visual-effects/meta.json"
+    },
+    {
+      "id": "disable-wifi-sense",
+      "title": "Disable Wifi Sense",
+      "description": "Disables Wifi Sense to prevent sharing of Wi-Fi networks with contacts",
+      "category": [
+        "Privacy",
+        "Network",
+        "General"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-wifi-sense",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-wifi-sense/meta.json"
+    },
+    {
+      "id": "disable-window-animations",
+      "title": "Disable Window Animations",
+      "description": "Disables minimize/maximize animations to make the entire OS feel instant.",
+      "category": [
+        "Performance",
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-window-animations",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-window-animations/meta.json"
+    },
+    {
+      "id": "disable-windows-indexing",
+      "title": "Disable Windows Search Indexing",
+      "description": "Disables the Windows Search indexer service (WSearch) which constantly indexes files in the background. Saves significant CPU, disk I/O, and memory. Use if you search files rarely or use third-party search tools.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-windows-indexing",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-windows-indexing/meta.json"
+    },
+    {
+      "id": "disable-windows-tips-suggestions",
+      "title": "Disable Windows Tips & Suggestions",
+      "description": "Disables Windows tips, tricks, and suggestions that appear in notifications, Start menu, and Settings. Also disables Microsoft's 'Get started' and 'Tips' apps. Reduces visual clutter and unwanted notifications.",
+      "category": [
+        "Privacy",
+        "General"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/disable-windows-tips-suggestions",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/disable-windows-tips-suggestions/meta.json"
+    },
+    {
+      "id": "enable-crash-dumps",
+      "title": "Enable Detailed Crash Dumps",
+      "description": "Configures Windows to generate complete memory dumps instead of minidumps on crashes. Provides much more diagnostic data for troubleshooting blue screens and system freezes. Useful for advanced users debugging driver or hardware issues.",
+      "category": [
+        "General",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/enable-crash-dumps",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/enable-crash-dumps/meta.json"
+    },
+    {
+      "id": "enable-dark-mode",
+      "title": "Enable Dark Mode",
+      "description": "Enables dark mode for Windows. Great for unactivated systems.",
+      "category": [
+        "General",
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/enable-dark-mode",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/enable-dark-mode/meta.json"
+    },
+    {
+      "id": "enable-end-task-right-click",
+      "title": "Enable End Task With Right Click",
+      "description": "Enables the \"End Task\" option in the taskbar context menu",
+      "category": [
+        "General"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/enable-end-task-right-click",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/enable-end-task-right-click/meta.json"
+    },
+    {
+      "id": "enable-game-mode",
+      "title": "Enable Game Mode",
+      "description": "Enables Game Mode on windows",
+      "category": [
+        "General",
+        "Performance",
+        "Gaming"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/enable-game-mode",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/enable-game-mode/meta.json"
+    },
+    {
+      "id": "enable-hags",
+      "title": "Enable HAGS",
+      "description": "Enables HAGS (Hardware Accelerated GPU Scheduling)",
+      "category": [
+        "Performance",
+        "Gaming",
+        "GPU"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/enable-hags",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/enable-hags/meta.json"
+    },
+    {
+      "id": "enable-msi-mode-gpu",
+      "title": "Enable MSI Mode for GPU",
+      "description": "Switches GPU to Message-Signaled Interrupts for lower latency and better FPS stability.",
+      "category": [
+        "Gaming",
+        "GPU",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/enable-msi-mode-gpu",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/enable-msi-mode-gpu/meta.json"
+    },
+    {
+      "id": "enable-optimization-for-windowed-games",
+      "title": "Enable Optimization For Windowed Games",
+      "description": "Enables Optimization For Windowed Games on windows",
+      "category": [
+        "General",
+        "Performance",
+        "Gaming"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/enable-optimization-for-windowed-games",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/enable-optimization-for-windowed-games/meta.json"
+    },
+    {
+      "id": "hide-taskview-and-widgets",
+      "title": "Hide Taskview and Widgets",
+      "description": "Hides the Taskview and Widgets buttons on the taskbar.",
+      "category": [
+        "General",
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/hide-taskview-and-widgets",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/hide-taskview-and-widgets/meta.json"
+    },
+    {
+      "id": "menu-show-delay-zero",
+      "title": "Menu Show Delay Zero",
+      "description": "Removes the delay when opening menus.",
+      "category": [
+        "Performance",
+        "Appearance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/menu-show-delay-zero",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/menu-show-delay-zero/meta.json"
+    },
+    {
+      "id": "optimize-network-settings",
+      "title": "Optimize Network Settings",
+      "description": "Changes various Windows settings to improve network latency and speeds.",
+      "category": [
+        "Network",
+        "Gaming"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "updatedversion": "2.9.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/optimize-network-settings",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/optimize-network-settings/meta.json"
+    },
+    {
+      "id": "optimize-nvidia-settings",
+      "title": "Optimize Nvidia Settings",
+      "description": "Changes Nvidia Control Panel settings to improve gaming performance",
+      "category": [
+        "Performance",
+        "GPU",
+        "Gaming"
+      ],
+      "recommended": false,
+      "reversible": false,
+      "docsurl": "https://docs.getcorex.net/tweaks/optimize-nvidia-settings",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/optimize-nvidia-settings/meta.json"
+    },
+    {
+      "id": "optimize-ssd-trim",
+      "title": "Optimize SSD TRIM & Defrag Schedule",
+      "description": "Disables automatic defragmentation (unnecessary for SSDs), ensures TRIM is enabled, and optimizes the Storage Tiers optimization schedule. Prevents Windows from unnecessary defrag operations on SSDs that reduce their lifespan.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/optimize-ssd-trim",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/optimize-ssd-trim/meta.json"
+    },
+    {
+      "id": "remove-clipchamp",
+      "title": "Remove Clipchamp",
+      "description": "Removes the Clipchamp video editor that comes pre-installed with Windows 11. Most users don't need it and it runs background processes. Can be reinstalled from the Store if needed.",
+      "category": [
+        "General"
+      ],
+      "recommended": false,
+      "reversible": false,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/remove-clipchamp",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/remove-clipchamp/meta.json"
+    },
+    {
+      "id": "remove-cortana",
+      "title": "Remove Cortana",
+      "description": "Removes the Cortana app and disables its background processes. Cortana is no longer needed in Windows 11 and wastes system resources running in the background.",
+      "category": [
+        "General"
+      ],
+      "recommended": true,
+      "reversible": false,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/remove-cortana",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/remove-cortana/meta.json"
+    },
+    {
+      "id": "remove-gaming-apps",
+      "title": "Remove Gaming Apps",
+      "description": "Removes Xbox app, Xbox Game Bar, and Xbox Game Overlay",
+      "category": [
+        "Performance",
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": false,
+      "docsurl": "https://docs.getcorex.net/tweaks/remove-gaming-apps",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/remove-gaming-apps/meta.json"
+    },
+    {
+      "id": "remove-ms-bing-integration",
+      "title": "Remove Microsoft Bing Integration",
+      "description": "Removes Bing apps and disables Bing web search in Windows Search.",
+      "category": [
+        "Privacy",
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/remove-ms-bing-integration",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/remove-ms-bing-integration/meta.json"
+    },
+    {
+      "id": "remove-onedrive",
+      "title": "Remove OneDrive",
+      "description": "Removes OneDrive from the system",
+      "category": [
+        "Performance",
+        "General",
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/remove-onedrive",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/remove-onedrive/meta.json"
+    },
+    {
+      "id": "remove-teams",
+      "title": "Remove Microsoft Teams (Consumer)",
+      "description": "Removes the consumer version of Microsoft Teams that ships with Windows 11 and auto-starts in the background. Frees system resources. The enterprise Teams app (if installed separately) is not affected.",
+      "category": [
+        "General"
+      ],
+      "recommended": true,
+      "reversible": false,
+      "addedversion": "2.20.0",
+      "docsurl": "https://docs.getcorex.net/tweaks/remove-teams",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/remove-teams/meta.json"
+    },
+    {
+      "id": "revert-context-menu",
+      "title": "Revert Context Menu",
+      "description": "Reverts the context menu to the default Windows 10 context menu.",
+      "category": [
+        "General",
+        "Appearance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/revert-context-menu",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/revert-context-menu/meta.json"
+    },
+    {
+      "id": "set-high-performance-power-plan",
+      "title": "Set High Performance Power Plan",
+      "description": "Activates the Ultimate Performance or High Performance power plan.",
+      "category": [
+        "Performance",
+        "Gaming"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/set-high-performance-power-plan",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/set-high-performance-power-plan/meta.json"
+    },
+    {
+      "id": "set-powershell7-default",
+      "title": "Set PowerShell 7 as Default",
+      "description": "Sets PowerShell 7 as the default profile in Windows Terminal (installs PS7 if missing)",
+      "category": [
+        "General"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/set-powershell7-default",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/set-powershell7-default/meta.json"
+    },
+    {
+      "id": "set-services-to-manual",
+      "title": "Set Services to Manual",
+      "description": "Sets various Windows services to Manual startup type to improve performance.",
+      "category": [
+        "Performance",
+        "Gaming"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/set-services-to-manual",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/set-services-to-manual/meta.json"
+    },
+    {
+      "id": "set-time-utc",
+      "title": "Set Time To UTC",
+      "description": "Sets the system time to UTC, Great for dual booting",
+      "category": [
+        "General"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/set-time-utc",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/set-time-utc/meta.json"
+    },
+    {
+      "id": "set-win32-priority-separation",
+      "title": "Set Win32 Priority Separation",
+      "description": "Optimizes foreground app performance by modifying system process priority behavior.",
+      "category": [
+        "Performance"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/set-win32-priority-separation",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/set-win32-priority-separation/meta.json"
+    },
+    {
+      "id": "show-file-extensions",
+      "title": "Show File Extensions",
+      "description": "Shows file extensions and hidden files in Explorer.",
+      "category": [
+        "General",
+        "Appearance"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/show-file-extensions",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/show-file-extensions/meta.json"
+    },
+    {
+      "id": "show-seconds-in-taskbar-clock",
+      "title": "Show Seconds in Taskbar Clock",
+      "description": "Enables the seconds next to the clock in the taskbar",
+      "category": [
+        "Appearance",
+        "General"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/show-seconds-in-system-clock",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/show-seconds-in-system-clock/meta.json"
+    },
+    {
+      "id": "ultimate-performance-plan",
+      "title": "Ultimate Performance Power Plan",
+      "description": "Enables And Applies The Windows Ultimate Powerplan for better performance",
+      "category": [
+        "Performance",
+        "Gaming"
+      ],
+      "recommended": true,
+      "reversible": true,
+      "docsurl": "https://docs.getcorex.net/tweaks/ultimate-performance-plan",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/ultimate-performance-plan/meta.json"
+    },
+    {
+      "id": "wpbt",
+      "title": "Disable Windows Platform Binary Table",
+      "description": "Prevents your computer vendor from executing programs at boot, reducing potential security risks.",
+      "category": [
+        "Privacy"
+      ],
+      "recommended": false,
+      "reversible": true,
+      "addedversion": "2.14.1",
+      "docsurl": "https://docs.getcorex.net/tweaks/wpbt",
+      "source": "https://github.com/Parcoil/CoreX/blob/v2/tweaks/wpbt/meta.json"
+    }
+  ]
+}

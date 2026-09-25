@@ -1,0 +1,8 @@
+{
+  "title": "Disable Fast Startup",
+  "name": "disable-fast-startup",
+  "risk": "safe",
+  "category": ["Performance", "General"],
+  "description": "Disables Windows Fast Startup to improve system stability",
+  "deepDescription": "Disables Windows Fast Startup by setting HiberbootEnabled to 0, preventing the system from using hybrid hibernation during shutdown for a full clean boot."
+}

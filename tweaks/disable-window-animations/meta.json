@@ -1,0 +1,8 @@
+{
+  "title": "Disable Window Animations",
+  "name": "disable-window-animations",
+  "risk": "safe",
+  "category": ["Performance", "Appearance"],
+  "description": "Disables minimize/maximize animations to make the entire OS feel instant.",
+  "deepDescription": "Disables window animation effects including minimize/maximize transitions, menu animations, and tooltip fade effects via the UserPreferencesMask registry key. This makes the entire OS feel significantly more responsive and snappy."
+}

@@ -1,0 +1,9 @@
+{
+  "title": "Block Telemetry via Hosts",
+  "name": "block-telemetry-hosts",
+  "risk": "safe",
+  "recommended": true,
+  "category": ["Privacy", "Network"],
+  "description": "DNS-level block of 100+ Microsoft telemetry domains via hosts file.",
+  "deepDescription": "Appends known Microsoft tracking and telemetry domains to the Windows hosts file, redirecting them to 0.0.0.0. This blocks telemetry at the DNS level and survives registry resets. Includes domains for telemetry, diagnostics, advertising, and data collection."
+}

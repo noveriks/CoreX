@@ -1,0 +1,8 @@
+{
+  "title": "Disable Defender RTP",
+  "name": "disable-defender-rtp",
+  "risk": "risky",
+  "category": ["Performance", "General"],
+  "description": "Disables Defender Real-time Protection",
+  "deepDescription": "Sets the Defender policy DisableRealtimeMonitoring to true, instructing Windows Security to stop actively scanning files and processes in real time. For better performance"
+}

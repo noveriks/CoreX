@@ -1,0 +1,1 @@
+# Re-enable Windows Search Indexing Service Write-Host "Re-enabling Windows Search Indexer (WSearch)..." -ForegroundColor Cyan Set-Service -Name "WSearch" -StartupType Automatic -ErrorAction Stop Start-Service -Name "WSearch" -ErrorAction SilentlyContinue Write-Host "Windows Search Indexer has been re-enabled." -ForegroundColor Green

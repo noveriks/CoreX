@@ -1,0 +1,8 @@
+{
+  "title": "Disable HPET",
+  "name": "disable-hpet",
+  "risk": "risky",
+  "category": ["Performance", "Gaming"],
+  "description": "Disables High Precision Event Timer to fix micro-stutter in games.",
+  "deepDescription": "Disables the High Precision Event Timer (HPET) via bcdedit and disables dynamic tick. HPET can cause micro-stutter and frame pacing issues in games like Valorant, CS2, and others. This forces the system to use the more efficient TSC timer source."
+}

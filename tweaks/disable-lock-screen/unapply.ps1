@@ -1,0 +1,1 @@
+# Re-enable Windows Lock Screen Write-Host "Re-enabling Windows lock screen..." -ForegroundColor Cyan Remove-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Personalization" -Name "NoLockScreen" -ErrorAction SilentlyContinue Write-Host "Lock screen has been re-enabled." -ForegroundColor Green

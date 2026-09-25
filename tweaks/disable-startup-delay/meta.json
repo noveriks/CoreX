@@ -1,0 +1,8 @@
+{
+  "title": "Disable Startup Delay",
+  "name": "disable-startup-delay",
+  "risk": "safe",
+  "category": ["Performance"],
+  "description": "Removes startup delay so apps launch immediately on boot.",
+  "deepDescription": "Sets the StartupDelayInMSec registry value to 0, removing the built-in delay Windows adds before launching startup programs. This makes your PC feel significantly faster after logging in."
+}

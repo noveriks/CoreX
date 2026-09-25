@@ -1,0 +1,13 @@
+{
+  "name": "wpbt",
+  "title": "Disable Windows Platform Binary Table",
+  "risk": "caution",
+  "description": "Prevents your computer vendor from executing programs at boot, reducing potential security risks.",
+  "reversible": true,
+  "modal": "Disabling WPBT prevents vendors from running programs on boot. Confirm you want to apply this tweak?",
+  "category": ["Privacy"],
+  "warning": "Some vendor software may not run at startup.",
+  "restart": true,
+  "deepDescription": "Windows Platform Binary Table (WPBT) allows manufacturers to execute software each boot, including drivers or anti-theft software. Disabling WPBT improves security by blocking this mechanism.",
+  "addedversion": "2.14.1"
+}

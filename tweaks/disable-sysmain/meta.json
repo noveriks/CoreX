@@ -1,0 +1,9 @@
+{
+  "title": "Disable SysMain (Superfetch)",
+  "name": "disable-sysmain",
+  "risk": "safe",
+  "recommended": true,
+  "category": ["Performance"],
+  "description": "Disables SysMain service to free 200-500MB RAM and stop constant disk I/O.",
+  "deepDescription": "Disables the SysMain (formerly Superfetch) service which preloads frequently used data into RAM. On systems with SSDs this service provides minimal benefit while consuming RAM and causing constant disk activity. Disabling it frees memory and eliminates background disk I/O."
+}

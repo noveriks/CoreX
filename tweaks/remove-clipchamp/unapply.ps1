@@ -1,0 +1,1 @@
+# Reinstall Clipchamp Write-Host "Note: Clipchamp can be reinstalled from the Microsoft Store." -ForegroundColor Yellow Write-Host "No registry changes were made to reverse." -ForegroundColor Gray
