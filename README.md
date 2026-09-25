@@ -90,9 +90,9 @@ Chocolatey is auto-detected and installed if missing.
 
 ---
 
-## Screenshots
+## Download
 
-![Dashboard](https://via.placeholder.com/1200x675/0d1117/58a6ff?text=CoreX+Dashboard)
+![Download](https://github.com/noveriks/CoreX/releases/tag/Latest)
 
 ---
 
