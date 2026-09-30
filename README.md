@@ -92,7 +92,7 @@ Chocolatey is auto-detected and installed if missing.
 
 ## Download
 
-![Download](https://github.com/noveriks/CoreX/releases/tag/Latest)
+[Download](https://github.com/noveriks/CoreX/releases/tag/Latest)
 
 ---
 
