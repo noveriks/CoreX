@@ -18,7 +18,6 @@ function Test-IsAdmin {
 
 if (-not (Test-IsAdmin)) {
     Write-Host "[CoreX Debloat] This script must be run as Administrator." -ForegroundColor Red
-    Read-Host "Press Enter to exit"
     exit 1
 }
 Add-Type -AssemblyName PresentationFramework

@@ -6,6 +6,11 @@
   "author": "Noveriks",
   "license": "MIT",
   "homepage": "https://github.com/Noveriks/CoreX",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win nsis",
+    "build:portable": "electron-builder --win portable"
+  },
   "dependencies": {
     "@electron-toolkit/preload": "^3.0.2",
     "@electron-toolkit/utils": "^4.0.0",
@@ -22,7 +27,55 @@
     "zustand": "^5.0.8"
   },
   "devDependencies": {
-    "electron": "^44.0.0"
+    "electron": "^44.0.0",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.noveriks.corex",
+    "productName": "CoreX",
+    "artifactName": "CoreX-Setup.exe",
+    "compression": "normal",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "**/*",
+      "!release{,/**}",
+      "!node_modules/.ignored{,/**}",
+      "!node_modules/electron-builder{,/**}",
+      "!node_modules/app-builder-lib{,/**}",
+      "!*.md",
+      "!.git{,/**}",
+      "!.pnpm-store{,/**}"
+    ],
+    "extraResources": [
+      {
+        "from": "resources",
+        "to": "."
+      }
+    ],
+    "asar": true,
+    "afterSign": "scripts/hooks/sign-app.js",
+    "afterAllArtifactBuild": "scripts/hooks/sign-installer.js",
+    "win": {
+      "icon": "resources/corex.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "deleteAppDataOnUninstall": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "CoreX"
+    }
   },
   "repository": "https://github.com/Noveriks/CoreX",
   "packageManager": "pnpm@10.29.3"

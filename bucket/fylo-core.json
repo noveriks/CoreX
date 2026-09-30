@@ -3,7 +3,7 @@
   "description": "Windows debloat and optimization tool",
   "homepage": "https://getfylocore.net",
   "license": "MIT",
-  "url": "https://github.com/Noveriks/CoreX/releases/download/2.19.0/corex-2.19.0-setup.exe",
+  "url": "https://github.com/noveriks/CoreX/releases/download/Latest/CoreX-Setup-2.19.0.exe",
   "hash": "REPLACE_ME",
 
   "shortcuts": [["corex.exe", "CoreX"]],
