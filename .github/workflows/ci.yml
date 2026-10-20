@@ -1,0 +1,84 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# No signing in CI builds: production signing is restricted to the release
+# workflow (tag push) so that pull requests - including forks - can never
+# trigger a production signing request.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build & verify (unsigned)
+    runs-on: windows-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.29.3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build unsigned NSIS installer
+        run: pnpm exec electron-builder --win nsis --config.directories.output=dist
+
+      - name: Verify Windows executable metadata
+        shell: pwsh
+        run: |
+          $installer = "dist\CoreX-Setup.exe"
+          if (-not (Test-Path $installer)) { throw "Installer not found: $installer" }
+
+          $v = (Get-Item $installer).VersionInfo
+          Write-Host "CompanyName     : $($v.CompanyName)"
+          Write-Host "ProductName     : $($v.ProductName)"
+          Write-Host "FileDescription : $($v.FileDescription)"
+          Write-Host "LegalCopyright  : $($v.LegalCopyright)"
+          Write-Host "FileVersion     : $($v.FileVersion)"
+          Write-Host "ProductVersion  : $($v.ProductVersion)"
+
+          $expected = @{
+            CompanyName = "Noveriks Team"
+            ProductName = "CoreX"
+          }
+          foreach ($key in $expected.Keys) {
+            if ($v.$key -ne $expected[$key]) {
+              throw "Unexpected $key : '$($v.$key)' (expected '$($expected[$key])')"
+            }
+          }
+          if ($v.LegalCopyright -notlike "Copyright* Noveriks Team") {
+            throw "Unexpected LegalCopyright: $($v.LegalCopyright)"
+          }
+          if ($v.FileVersion -ne (Get-Content package.json -Raw | ConvertFrom-Json).version) {
+            throw "FileVersion does not match package.json version"
+          }
+          Write-Host "Windows metadata OK"
+
+      - name: Upload unsigned installer (internal artifact)
+        uses: actions/upload-artifact@v4
+        with:
+          name: corex-unsigned-installer
+          path: dist/CoreX-Setup.exe
+          if-no-files-found: error
+          retention-days: 14

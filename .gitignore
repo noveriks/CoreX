@@ -4,7 +4,9 @@ node_modules
 .qoder
 
 # Build output
-out/
+# NOTE: out/ is intentionally tracked so GitHub Actions can package the app.
+# The repository does not contain the application source yet - when src/ is
+# added, remove this exception and let CI build from source.
 release/
 
 # Logs

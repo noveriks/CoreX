@@ -1,0 +1,175 @@
+name: Release
+
+# Production signing is only reachable from here:
+#   - a tag push on the maintained branch, or
+#   - a manual dispatch by someone with write access.
+# Pull requests (including forks) never get the signing secret.
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to release (must match package.json, e.g. 2.19.0)"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    name: Build, sign and publish
+    runs-on: windows-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Checkout exact release source
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.29.3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Verify version consistency
+        shell: pwsh
+        run: |
+          $pkg = Get-Content package.json -Raw | ConvertFrom-Json
+          $version = $pkg.version
+          if ("${{ inputs.version }}" -ne "" -and "${{ inputs.version }}" -ne $version) {
+            throw "Requested version '${{ inputs.version }}' does not match package.json version '$version'"
+          }
+          if ("${{ github.ref_type }}" -eq "tag") {
+            $tag = "${{ github.ref_name }}"
+            if ($tag -ne "v$version") {
+              throw "Tag '$tag' does not match package.json version 'v$version'"
+            }
+          }
+          "Releasing CoreX $version"
+
+      - name: Build unsigned NSIS installer
+        run: pnpm exec electron-builder --win nsis --config.directories.output=dist
+
+      - name: Verify installer exists and Windows metadata
+        shell: pwsh
+        run: |
+          $installer = "dist\CoreX-Setup.exe"
+          if (-not (Test-Path $installer)) { throw "Installer not found: $installer" }
+          $v = (Get-Item $installer).VersionInfo
+          Write-Host "CompanyName     : $($v.CompanyName)"
+          Write-Host "ProductName     : $($v.ProductName)"
+          Write-Host "FileDescription : $($v.FileDescription)"
+          Write-Host "LegalCopyright  : $($v.LegalCopyright)"
+          Write-Host "FileVersion     : $($v.FileVersion)"
+          if ($v.CompanyName -ne "Noveriks Team" -or $v.ProductName -ne "CoreX") {
+            throw "Unexpected Windows metadata"
+          }
+
+      - name: Upload unsigned installer for signing
+        id: upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: corex-release-artifact
+          path: dist/CoreX-Setup.exe
+          if-no-files-found: error
+          retention-days: 7
+
+      - name: Submit signing request to SignPath
+        id: signpath
+        uses: signpath/github-action-submit-signing-request@v3
+        with:
+          api-token: ${{ secrets.SIGNPATH_API_TOKEN }}
+          organization-id: ${{ vars.SIGNPATH_ORGANIZATION_ID }}
+          project-slug: ${{ vars.SIGNPATH_PROJECT_SLUG }}
+          signing-policy-slug: ${{ vars.SIGNPATH_SIGNING_POLICY_SLUG }}
+          artifact-configuration-slug: ${{ vars.SIGNPATH_ARTIFACT_CONFIGURATION_SLUG || 'initial' }}
+          github-artifact-id: ${{ steps.upload.outputs.artifact-id }}
+          wait-for-completion: true
+          wait-for-completion-timeout-in-seconds: "1800"
+          output-artifact-directory: ${{ github.workspace }}\signed
+
+      - name: Verify Authenticode signature
+        shell: pwsh
+        env:
+          REQUIRE_VALID_SIGNATURE: ${{ vars.SIGNPATH_REQUIRE_VALID_SIGNATURE }}
+        run: |
+          $signed = Get-ChildItem "${{ github.workspace }}\signed" -Filter *.exe -Recurse | Select-Object -First 1
+          if (-not $signed) { throw "No signed artifact was returned by SignPath" }
+
+          $sig = Get-AuthenticodeSignature $signed.FullName
+          Write-Host "Status            : $($sig.Status)"
+          Write-Host "StatusMessage     : $($sig.StatusMessage)"
+          Write-Host "SignerCertificate : $($sig.SignerCertificate.Subject)"
+
+          if (-not $sig.SignerCertificate) { throw "Artifact is not signed" }
+          if ($sig.Status -eq "HashMismatch" -or $sig.Status -eq "NotSigned") {
+            throw "Invalid Authenticode signature: $($sig.Status)"
+          }
+          # A publicly trusted certificate reports "Valid".
+          # A self-signed development certificate reports UnknownError/
+          # NotTrusted on CI runners that do not trust the root - that is a
+          # trust-chain issue, not a broken signature.
+          if ($env:REQUIRE_VALID_SIGNATURE -eq "true" -and $sig.Status -ne "Valid") {
+            throw "Signature status is '$($sig.Status)' but Valid was required"
+          }
+          Write-Host "Signature verification OK"
+
+      - name: Generate checksums
+        shell: pwsh
+        run: |
+          $signed = Get-ChildItem "${{ github.workspace }}\signed" -Filter *.exe -Recurse | Select-Object -First 1
+          $hash = (Get-FileHash $signed.FullName -Algorithm SHA256).Hash
+          $line = "$hash  $($signed.Name)"
+          Set-Content -Path "${{ github.workspace }}\checksums.txt" -Value $line -Encoding utf8
+          Write-Host $line
+
+      - name: Publish signed installer to GitHub Release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ inputs.version != '' && github.ref_type == 'workflow_dispatch' && format('v{0}', inputs.version) || github.ref_name }}
+        run: |
+          $signed = Get-ChildItem "${{ github.workspace }}\signed" -Filter *.exe -Recurse | Select-Object -First 1
+          $version = (Get-Content package.json -Raw | ConvertFrom-Json).version
+          $notes = @"
+          ## CoreX $version
+
+          Windows system monitoring and optimization toolkit - published by **Noveriks Team**.
+
+          | | |
+          |---|---|
+          | Publisher | Noveriks Team |
+          | Version | $version |
+          | License | MIT |
+          | Source | https://github.com/Noveriks/CoreX |
+          | Website | https://getcorex.net |
+
+          Download the signed installer below. Verify the signature in Windows
+          (right click the file > Properties > Digital Signatures) and the
+          SHA-256 in `checksums.txt`.
+          "@
+
+          gh release create $env:TAG `
+            "$($signed.FullName)" `
+            "${{ github.workspace }}\checksums.txt" `
+            --title "CoreX $version" `
+            --notes $notes `
+            --verify-tag
+          Write-Host "Release published: $env:TAG"

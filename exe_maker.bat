@@ -8,7 +8,11 @@ echo    CoreX - build CoreX-Setup.exe (NSIS installer)
 echo ============================================================
 echo.
 if defined SIGNPATH_API_TOKEN (
-  echo    Signing: SignPath ENABLED ^(CoreX.exe + installer^)
+  if defined SIGNPATH_SIGN_APP (
+    echo    Signing: SignPath ENABLED ^(CoreX.exe + installer^)
+  ) else (
+    echo    Signing: SignPath ENABLED ^(installer only - set SIGNPATH_SIGN_APP=1 to sign CoreX.exe too^)
+  )
 ) else (
   echo    Signing: disabled ^(SIGNPATH_API_TOKEN not set - build will be unsigned^)
 )

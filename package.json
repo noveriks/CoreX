@@ -1,9 +1,13 @@
 {
   "name": "corex",
+  "productName": "CoreX",
   "version": "2.19.0",
-  "description": "CoreX",
+  "description": "Windows system monitoring and optimization toolkit",
   "main": "./out/main/index.js",
-  "author": "Noveriks",
+  "author": {
+    "name": "Noveriks Team",
+    "email": "help.mahinulislam@gmail.com"
+  },
   "license": "MIT",
   "homepage": "https://github.com/Noveriks/CoreX",
   "scripts": {
@@ -28,11 +32,13 @@
   },
   "devDependencies": {
     "electron": "^44.0.0",
-    "electron-builder": "^26.15.3"
+    "electron-builder": "^26.15.3",
+    "resedit": "^1.7.2"
   },
   "build": {
     "appId": "com.noveriks.corex",
     "productName": "CoreX",
+    "copyright": "Copyright © Noveriks Team",
     "artifactName": "CoreX-Setup.exe",
     "compression": "normal",
     "directories": {
