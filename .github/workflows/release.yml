@@ -65,7 +65,7 @@ jobs:
           "Releasing CoreX $version"
 
       - name: Build unsigned NSIS installer
-        run: pnpm exec electron-builder --win nsis --config.directories.output=dist
+        run: pnpm exec electron-builder --win nsis --config.directories.output=dist --publish never
 
       - name: Verify installer exists and Windows metadata
         shell: pwsh

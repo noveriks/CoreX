@@ -42,7 +42,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Build unsigned NSIS installer
-        run: pnpm exec electron-builder --win nsis --config.directories.output=dist
+        run: pnpm exec electron-builder --win nsis --config.directories.output=dist --publish never
 
       - name: Verify Windows executable metadata
         shell: pwsh
